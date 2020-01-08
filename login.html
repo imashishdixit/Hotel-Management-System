@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>RAMADA HOTEL| LOGIN</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		
+               
+        
+        
+        
+        
+       
+<style>
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+ 
+input[type=text], input[type=password] 
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 0%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+    </head>
+    <body>
+		<!---start-Wrap--->
+			<!---start-header--->
+			<div class="header">
+				<div class="wrap">
+					<div class="header-top">
+						<div class="logo">
+							<a href="index.html"><img src="images/ramada.png" title="logo" /></a>
+						</div>
+						<div class="contact-info">
+							<p class="phone">Call us : <a href="#">98045662656</a></p>
+							<p class="gpa">Gpa : <a href="#">View map</a></p>
+							<br><a href="login.html"><p style="border:1px;border-style:groove;text-align:center;
+							background-color:#262626;color:white;border-radius:5px;">login</p></a>
+							
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<div class="header-top-nav">
+					<div class="wrap">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							
+							
+							<li><a href="services.html">Services</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="about.html">About</a></li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!---End-header--->
+        
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" >
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/login.gif" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+
+var modal = document.getElementById('id01');
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+     <div class="box center-box">
+					<ul>
+						<li><a href="https:www.code-projects.org">Leave a Feedback</a></li>
+						<li><a href="https:www.code-projects.org">Reviews and Ratings</a></li>
+						<li><a href="https:www.code-projects.org">FAQs</a></li>
+						<li><a href="https:www.code-projects.org">Packages</a></li>
+						<li><a href="https:www.code-projects.org">Know about Moutaineering and trekking here</a></li>
+						
+					</ul>
+				</div>
+		
+				<div class="clear"> </div>
+			</div>
+			<!---start-box---->
+		</div>
+		
+			</div>
+			<!---End-content----->
+		</div>
+		<!---End-Wrap--->
+	</body>
+</html>
